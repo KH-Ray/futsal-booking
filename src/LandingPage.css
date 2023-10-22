@@ -1,0 +1,61 @@
+.landing-page {
+    background-color: #7ab9f7;
+    /* background-image :url('/public/images/image10.jpg'); */
+    background-size: 100% 100%;
+  }
+  
+  .landing-page h1 {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 10px; 
+    margin-bottom: 10px;
+  }
+  
+  
+  .landing-page select,
+  .landing-page input[type="date"] {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 5px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  
+  .landing-page button {
+    background-color: #123ede;
+    color: #f8f3f3;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .login {
+    position: absolute;
+    top: 30px; /* Atur jarak dari atas */
+    right: 40px; /* Atur jarak dari kanan */
+    font-size: 20px;
+  }
+  
+  .login a {
+    background-color: #123ede;
+    color: #f8f3f3;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  
