@@ -1,29 +1,46 @@
 package main
 
 import (
-	"ServerBook/models"
-	"errors"
 	"net/http"
 	"strconv"
 
 	"github.com/julienschmidt/httprouter"
 )
 
-func (App *application) GetLapangan(w http.ResponseWriter, r *http.Request) {
+func (app *Application) GetLapangan(w http.ResponseWriter, r *http.Request) {
 	params := httprouter.ParamsFromContext(r.Context())
 
 	id, err := strconv.Atoi(params.ByName("id"))
 	if err != nil {
-		App.logger.Print(errors.New("invalid id parameter"))
+
+		app.errorJSON(w, err)
+		return
 	}
 
-	/* 	app.logger.Println("id :", id) */
-
-	lapangan := models.Lapangan{
-		ID:     id,
-		Title:  "",
-		Desc:   "",
-		Rating: 5,
+	lapangan, err := app.models.DB.Get(id)
+	if err != nil {
+		app.errorJSON(w, err)
+		return
 	}
-	err = App.WriteJSON(w, http.StatusOK, lapangan, "Lapangan")
+
+	err = app.WriteJSON(w, http.StatusOK, lapangan, "Lapangan")
+	if err != nil {
+		app.errorJSON(w, err)
+		return
+	}
+}
+
+func (app *Application) GetAllLapangan(w http.ResponseWriter, r *http.Request) {
+
+	AllLapangan, err := app.models.DB.All()
+	if err != nil {
+		app.errorJSON(w, err)
+		return
+	}
+
+	err = app.WriteJSON(w, http.StatusOK, AllLapangan, "Lapangan")
+	if err != nil {
+		app.errorJSON(w, err)
+		return
+	}
 }

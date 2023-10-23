@@ -1,24 +1,20 @@
 package main
 
 import (
-	"ServerBook/models"
 	"encoding/json"
 	"net/http"
 )
 
-func (App *application) StatusHandler(w http.ResponseWriter, r *http.Request) {
-
-	const Version = "1.0.0"
-
-	currentStatus := models.AppStatus{
-		Status:     "Online",
-		Enviroment: App.config.Env,
-		Version:    Version,
+func (app *Application) statusHandler(w http.ResponseWriter, r *http.Request) {
+	currentStatus := AppStatus{
+		Status:      "Online",
+		Environment: app.config.env,
+		Version:     version,
 	}
 
 	res, err := json.MarshalIndent(currentStatus, "", "\t")
 	if err != nil {
-		App.logger.Println(err)
+		app.logger.Println(err)
 	}
 
 	w.Header().Set("Content-Type", "application/json")

@@ -1,19 +1,20 @@
 package models
 
+import "database/sql"
+
+type Models struct {
+	DB DBModel
+}
+
+func NewModels(db *sql.DB) Models {
+	return Models{
+		DB: DBModel{DB: db},
+	}
+}
+
 type Lapangan struct {
 	ID     int    `json:"id"`
 	Title  string `json:"title"`
-	Desc   string `json:"description"`
 	Rating int    `json:"rating"`
-}
-
-type Config struct {
-	Port int
-	Env  string
-}
-
-type AppStatus struct {
-	Status     string `json:"status"`
-	Enviroment string `json:"enviroment"`
-	Version    string `json:"version"`
+	Desc   string `json:"description"`
 }
