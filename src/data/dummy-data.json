@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "alamat": "Jln. Jalan",
+    "image": "/images/football-images/football-1.jpg"
+  },
+  {
+    "id": 2,
+    "alamat": "Jln. Sabar",
+    "image": "/images/football-images/football-2.jpg"
+  }
+]
