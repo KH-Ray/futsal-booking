@@ -1,4 +1,5 @@
 import './LandingPage.css'; 
+import { Link } from "react-router-dom";
 
 const locations = [
   "Jakrta",
@@ -14,7 +15,7 @@ function LandingPage() {
   return (
     <div className="landing-page">
       <div className="login">
-        <a href="./login">Login</a>
+        <a href="/Login">Login</a>
       </div>
       <h1>Mau main dimana?</h1>
       <select>
@@ -25,7 +26,11 @@ function LandingPage() {
         ))}
       </select>
       <input type="date" />
-      <button>Cari</button>
+      <div> 
+        <Link to="/Login">
+        <button>Cari</button>
+        </Link>
+      </div>
     </div>
   );
 }

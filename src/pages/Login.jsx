@@ -1,5 +1,6 @@
 import "./Login.module.css";
 import styles from "./Login.module.css";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -29,9 +30,12 @@ function Login() {
                 placeholder="Password"
                 className={styles.input}
               />
-            </div>
-
-            <button className={styles.button}>Log In</button>
+            </div> 
+            <div>
+            <Link to="/LandingPage">
+             <button className={styles.button}>Log In</button>
+             </Link>
+            </div>    
           </div>
         </div>
       </div>
