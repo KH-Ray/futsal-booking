@@ -1,0 +1,28 @@
+.searchBar {
+  border: none;
+  border-radius: 9999px;
+  background-color: #ced4da;
+  width: 64rem;
+  height: 3.2rem;
+  padding: 1.6rem;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.searchOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.dropdown {
+  border: none;
+  border-radius: 9999px;
+  width: 12.8rem;
+  height: 3.2rem;
+  padding: 0.6rem;
+  background-color: #ced4da;
+  font-family: "Poppins", sans-serif;
+}
