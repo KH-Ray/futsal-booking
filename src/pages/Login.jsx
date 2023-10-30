@@ -3,12 +3,13 @@ import styles from "./Login.module.css";
 import { Link } from "react-router-dom";
 
 function Login() {
+  console.log("test");
   return (
     <main className={styles.login}>
       <div className={styles.container}>
         <div className={styles.leftContainer}>
           <img
-            src="./public/images/football-img.jpg"
+            src="/images/football-img.jpg"
             className={styles.image}
           />
         </div>
@@ -32,7 +33,7 @@ function Login() {
               />
             </div> 
             <div>
-            <Link to="/LandingPage">
+            <Link to="/About">
              <button className={styles.button}>Log In</button>
              </Link>
             </div>    

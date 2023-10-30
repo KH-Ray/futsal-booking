@@ -1,0 +1,54 @@
+.container {
+    display: grid;
+    grid-template-rows: minmax(150px, 20fr) 80fr;
+    grid-template-columns: minmax(200px, 20fr) 80fr;
+  
+    height: 100vh;
+  }
+  
+  .aside {
+    grid-row: 1 / -1;
+    background-color: #339af0;
+  }
+  
+  .menusContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  
+    color: #fff;
+    padding: 3.2rem 4.8rem 0;
+  }
+  
+  .menuTitle {
+    font-size: 3.2rem;
+  }
+  
+  .menus {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  
+    list-style: none;
+    font-size: 1.6rem;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .icon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  
+  .page {
+    transition: all 0.2s;
+  }
+  
+  .page:hover {
+    cursor: pointer;
+    transform: translateX(5px);
+  }

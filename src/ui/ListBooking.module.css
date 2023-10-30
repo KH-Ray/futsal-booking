@@ -1,0 +1,36 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+
+.card {
+  list-style: none;
+  padding: 1.2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  border-bottom: 12px solid #ffd43b;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.description {
+  margin-top: 1.2rem;
+}
+
+.cardTitle {
+  font-size: 2rem;
+}
+
+.cardDescription {
+  margin-top: 0.2rem;
+  font-size: 1.2rem;
+}
