@@ -1,0 +1,149 @@
+.landing-page {
+  /* Gunakan repeating linear gradient untuk garis-garis */
+  background: repeating-linear-gradient(
+    to bottom,
+    #c5dae3,
+    #c5dae3 2px,
+    #339ccc 2px,
+    #339ccc 4px,
+    #366fe1 4px,
+    
+   
+  );
+  background-size: 100% 100%;
+  background-origin: border-box;
+  height: 100vh;
+  
+  list-style: none;
+  
+}
+
+
+
+.landing-page h1 {
+  background-color: #1c1919;
+  color:block;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 10px; 
+  margin-bottom: 10px;
+}
+
+
+.landing-page select,
+.landing-page input[type="date"] {
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 5px solid #ccc;
+  border-radius: 15px;
+}
+
+
+.landing-page button {
+  background-color: #123ede;
+  color: #f4f0f0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+
+.center-content {
+  text-align: center;
+  background-color: #141212;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.center-content h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.center-content select,
+.center-content input {
+  margin: 10px 0;
+}
+
+.center-content button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style untuk dropdown content */
+.home-dropdown {
+  cursor: pointer;
+  color: #000;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+/* LandingPage.css */
+/* ... (CSS lainnya) */
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.mau-main-dimana {
+  text-align: center;
+  padding: 20px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.mau-main-dimana h1 {
+  margin: 0;
+}
