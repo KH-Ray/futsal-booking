@@ -1,0 +1,119 @@
+.landing-page {
+  background: linear-gradient(45deg, #0c0c0c);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333; 
+}
+
+.menu {
+  position: absolute;
+  top: 100px;
+  left: 110px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 5px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.home-dropdown {
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(236, 234, 234, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  color: #f7f0f0;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: rgb(5, 4, 4);
+}
+
+
+
+/* Mau main dimana? */
+/* CSS untuk menggeser elemen ke pojok kanan bawah */
+.pilihan {
+  position: fixed;
+  background-color: #4c8bcf;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  z-index: 999; /* pastikan elemen ini muncul di atas elemen lain */
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.landing-page select,
+.landing-page input[type="date"] {
+  width: 150%;
+  padding: 10px;
+  margin: 10px 10px;
+  border: 5px solid #cccccc;
+  max-width: 100%;
+  border-radius: 10px;
+  display: block; /* agar elemen ini tampil satu per satu */
+  margin: 10 auto; /* untuk mengatur posisi horizontal ke tengah */
+}
+
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    margin-top: 0px;
+    margin-left: 10px; 
+    max-width: 50%; 
+    border-radius: 5px; 
+    margin-left: 120px; 
+}
+
+.additional-content {
+  background-color: #4c8bcf;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.video-background {
+  position: fixed;
+  top: 1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -20;
+  opacity: 0.9; 
+  border-radius: 4px;
+  object-fit: cover;
+}
